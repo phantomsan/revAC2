@@ -5,9 +5,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @author aluno
+ *
+ */
 @RestController
 public class revAC2 {
 	
+	/**
+	 * @param valor1
+	 * @param valor2
+	 * @return
+	 */
 	@RequestMapping(value = "/soma/{valor1}/{valor2}", method = RequestMethod.GET)
 	
 	public Integer somar (@PathVariable Integer valor1, @PathVariable Integer valor2) {
